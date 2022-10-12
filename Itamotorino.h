@@ -24,12 +24,15 @@ class Itamotorino
                 int pinM2a, int pinM2b,
                 int pinEnableM1, int pinEnableM2);
     void setSpeeds(int m1, int m2);
+    void setupADC(int channelM1, int freqM1, int resolutionM1, int channelM2, int freqM2, int resolutionM2);
 
   private:
 	int _pinM1a, _pinM1b;
 	int _pinM2a, _pinM2b;
 	int _pinEnableM1, _pinEnableM2;
   int _m1, _m2;
+  int _channelM1, _freqM1, _resolutionM1;
+  int _channelM2, _freqM2, _resolutionM2;
 };
 
 #endif
